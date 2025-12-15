@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sports Center Pdr - Loja de Esportes</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Ícones Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script JS -->
+  <script src="script.js"></script>
+
+  <!-- CSS -->
+  <style>
+    .produto-img {
+      height: 230px;
+      object-fit: cover;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER / NAVBAR  -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Sports Center Pdr</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item fw-bold"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item fw-bold"><a class="nav-link" href="#produtos">Produtos</a></li>
+          <li class="nav-item fw-bold"><a class="nav-link" href="#compra">Compra</a></li>
+          <li class="nav-item fw-bold"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- MAIN -->
+<main>
+
+<!-- HERO -->
+<section class="d-flex align-items-center text-center text-white"
+  style="height:90vh; background:url('https://media.istockphoto.com/id/1419288169/pt/foto/football-training-camp-football-soccer-children-training-class-kids-practicing-football-on.jpg?s=2048x2048&w=is&k=20&c=Alc3GlIcmK2UKQ-lOcfZCzWZs4eyLBdhF3lXIwfUupA=') center/cover;">
+  <div class="container bg-secondary bg-opacity-75 p-4 rounded">
+    <button class="btn btn-warning fw-bold mb-3" onclick="aplicarPromocao()">🔥 Promoção do Dia</button>
+    <h1 class="fw-bold text-danger">Tudo para o seu esporte</h1>
+    <p class="fw-bold text-white">Qualidade, desempenho e confiança</p>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="py-5 my-5" style="scroll-margin-top:90px;">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2 class="text-danger fw-bold mb-3">Sobre a Sports Center Pdr</h2> 
+        <p>
+          A Sports Center Pdr é uma loja especializada em produtos esportivos, como tênis, camisas e bolas de futebol.
+        </p>
+        <p>
+          Nosso objetivo é garantir um bom desempenho, conforto e preço justo em um só lugar.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="https://source.unsplash.com/500x350/?sports-store" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUTOS -->
+<section id="produtos" class="py-5 my-5" style="scroll-margin-top:90px;">
+  <div class="container">
+    <h2 class="text-center text-danger fw-bold mb-5">Produtos</h2>
+
+    <!-- TENIS -->
+    <h3 class="text-danger fw-bold mb-3"><i class="fa-solid fa-shoe-prints"></i> Tênis</h3>
+    <div class="row g-4 mb-5">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://media.istockphoto.com/id/1174864677/pt/foto/close-up-shot-of-hands-tying-shoelaces-sneaker-on-the-running-track-getting-ready-to-jogging.jpg?s=2048x2048&w=is&k=20&c=xtoVGOEAZahR0wRkCpYXOqTvwlcRJNhPrI1e2UUlBxM=" class="produto-img">
+          <div class="card-body text-center">
+            <h5>Tênis de Corrida (1)</h5>
+            <p>R$ 300</p>
+            <button class="btn btn-danger" onclick="adicionar('Tênis de Corrida (1)',300)">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://media.istockphoto.com/id/1345226228/pt/foto/male-legs-in-jeans-and-white-sneakers-on-background-of-concrete-stairs.jpg?s=2048x2048&w=is&k=20&c=fsdzcvohZIxfI81qHC-CagAUEM9pmLf6a73EHLuCq3c=" class="produto-img">
+          <div class="card-body text-center">
+            <h5>Tênis Casual</h5>
+            <p>R$ 280</p>
+            <button class="btn btn-danger" onclick="adicionar('Tênis Casual',280)">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://media.istockphoto.com/id/618982838/pt/foto/lace-up-for-the-workout-of-your-life.jpg?s=2048x2048&w=is&k=20&c=i6QJFVaNaufl0oUjH_W_usRRZNUueivlkltEeKb97OI=" class="produto-img">
+          <div class="card-body text-center">
+            <h5>Tênis de Corrida (2)</h5>
+            <p>R$ 320</p>
+            <button class="btn btn-danger" onclick="adicionar('Tênis de Corrida (2)',320)">Adicionar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAMISAS -->
+    <h3 class="text-danger fw-bold mb-3"><i class="fa-solid fa-shirt"></i> Camisas</h3>
+    <div class="row g-4 mb-5">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://media.istockphoto.com/id/1486146700/pt/foto/mature-men-outdoor-physical-activity.jpg?s=2048x2048&w=is&k=20&c=5HdrAABiwA5k9yStMshZ5CHsMio-O7XxkgCkI0SuALI=" class="produto-img">
+          <div class="card-body text-center">
+            <h5>Camisa Dry Fit (1)</h5>
+            <p>R$ 120</p>
+            <button class="btn btn-danger" onclick="adicionar('Camisa Dry Fit (1)',120)">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://media.istockphoto.com/id/957636966/pt/foto/brazilian-fan-soccer-vibrant-person.jpg?s=2048x2048&w=is&k=20&c=OCFc1LauszH6PSKyVs5wmlgYbXW794tmP5Kt3B-MKYY=" class="produto-img">
+          <div class="card-body text-center">
+            <h5>Camisa da Seleção</h5>
+            <p>R$ 110</p>
+            <button class="btn btn-danger" onclick="adicionar('Camisa da Seleção',110)">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://media.istockphoto.com/id/1045886560/pt/foto/portrait-of-smiling-handsome-man-in-blue-t-shirt-standing-with-crossed-arms-isolated-on-grey.jpg?s=2048x2048&w=is&k=20&c=Z40wg9G3ZP5FrjQEWxnEx79pb8LeVGY6Eu5Id3LbOIM=" class="produto-img">
+          <div class="card-body text-center">
+            <h5>Camisa Dry Fit (2)</h5>
+            <p>R$ 100</p>
+            <button class="btn btn-danger" onclick="adicionar('Camisa Dry Fit (2)',100)">Adicionar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOLAS -->
+    <h3 class="text-danger fw-bold mb-3"><i class="fa-solid fa-futbol"></i> Bolas</h3>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://media.istockphoto.com/id/1637717332/pt/foto/football-on-grass.jpg?s=2048x2048&w=is&k=20&c=4rkuXU3Mj2EHH6tAM-8SY8h_P-rwUWumsQt2r7x6wGg=" class="img-fluid rounded produto-img" class="produto-img">
+          <div class="card-body text-center">
+            <h5>Bola Futebol (1)</h5>
+            <p>R$ 150</p>
+            <button class="btn btn-danger" onclick="adicionar('Bola Campo (1)',150)">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://media.istockphoto.com/id/2046629755/pt/foto/a-basketball-on-court-with-junior-team-in-blurry-background.jpg?s=2048x2048&w=is&k=20&c=UYuNsZp-bguZleW1HRNiXHTBOX_LXdAKBZQ4-INCqeg=" class="produto-img">
+          <div class="card-body text-center">
+            <h5>Bola Basquete</h5>
+            <p>R$ 140</p>
+            <button class="btn btn-danger" onclick="adicionar('Bola Campo (2)',140)">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://media.istockphoto.com/id/137216647/pt/foto/bola-de-futebol-no-campo.jpg?s=2048x2048&w=is&k=20&c=-w9dxKTKflvUDUilj0rEdYBlo9Xvom4aGrspfFubpLY=" class="produto-img">
+          <div class="card-body text-center">
+            <h5>Bola Futebol (2)</h5>
+            <p>R$ 130</p>
+            <button class="btn btn-danger" onclick="adicionar('Bola Campo (3)',130)">Adicionar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- COMPRA -->
+<section id="compra" class="py-5 bg-light" style="scroll-margin-top:90px;">
+  <div class="container">
+    <h2 class="text-center text-danger fw-bold mb-4">Carrinho</h2>
+    <div id="carrinho"></div>
+    <h4 class="mt-3">Total: R$ <span id="total">0</span></h4>
+    <button class="btn btn-danger mt-3" onclick="finalizar()">Finalizar Compra</button>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="py-5 my-5" style="scroll-margin-top:100px;">
+  <div class="container">
+    <h2 class="text-danger fw-bold mb-4">Contato</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <p><i class="fa-solid fa-phone text-success"></i> (64) 99425-9999</p>
+        <p><i class="fa-solid fa-envelope text-warning"></i> contato@sportcenterpdr.com</p>
+        <p><i class="fa-solid fa-location-dot text-danger"></i> Rua Rui Barbosa, 123, Pires do Rio</p>
+      </div>
+      <div class="col-md-6">
+        <p class="fw-bold">Siga-nos nas redes sociais:</p>
+        <i class="fa-brands fa-instagram fs-3 me-3 text-warning"></i>
+        <i class="fa-brands fa-linkedin fs-3 me-3 text-primary"></i>
+        <i class="fa-brands fa-facebook fs-3 text-primary"></i>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3">
+  © 2025 - Sports Center Pdr
+</footer>
+
+</body>
+</html>
